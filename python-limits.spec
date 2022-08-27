@@ -1,11 +1,11 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-limits
-Version:	1.5.1
+Version:	2.7.0
 Release:	1
 Summary:	Rate limiting utilities
 License:	MIT
 URL:		https://limits.readthedocs.org
-Source0:	https://files.pythonhosted.org/packages/3f/a5/05c7c11f7c9f02d8f58959c036ea02da1f62ac9da686a25232c2d1dd79ed/limits-1.5.1.tar.gz
+Source0:	https://files.pythonhosted.org/packages/b4/95/b08b833e2a386d08df7a5e5b8b2115bb0a930320088fc4efdf9746367a1d/limits-2.7.0.tar.gz
 BuildArch:	noarch
 
 Requires:	python3-six
@@ -30,7 +30,7 @@ Provides:	python3-limits-doc
 Development documents and examples for limits
 
 %prep
-%autosetup -n limits-1.5.1
+%autosetup -n limits-2.7.0
 
 %build
 %py3_build
@@ -70,5 +70,8 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Wed Aug 24 2022 hkgy <kaguyahatu@outlook.com> - 2.7.0-1
+- Update to 2.7.0
+
 * Sat Feb 20 2021 Python_Bot <Python_Bot@openeuler.org>
 - Package Spec generated
